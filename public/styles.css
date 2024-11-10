@@ -1,0 +1,208 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    /*background-color: black; /* Set the background color to black */
+   background-image: url(bggg.jpg);
+    color: white;            /* Set the text color to white */
+}
+
+.navbar {
+    
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.navbar a {
+    font-weight: bold; /* Make text bold */
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+     ;
+}
+.navbar a:hover{
+    text-decoration: underline;
+}
+
+.navbar .login-button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    color: white;
+    font-size: 16px;
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+.navbar .login-button:hover {
+    background-color: #45a049; /* Lighter green on hover */
+}
+
+.content {
+    display: none; /* Hide all content by default */
+    padding: 20px;
+    text-align: center; /* Center the text in content */
+}
+
+.content.active {
+    display: block; /* Show active content */
+}
+
+
+.anime-list {
+    display: flex; /* Use flexbox to layout anime items */
+    justify-content: center; /* Center items horizontally */
+    flex-direction: column; /* Stack items in a column */
+    align-items: center; /* Center items horizontally */
+    margin-top: 20px; /* Space above the list */
+}
+
+
+.anime-item {
+    display: flex;
+    flex-direction: column; /* Stack image and title vertically */
+    align-items: center; /* Center items horizontally */
+    background-color: #e6dfdf85; /* White background for each anime item */
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 20px; /* Increased padding inside the item */
+    width: 250px; /* Increased width for larger items */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3); /* Slight shadow for depth */
+    margin: 20px; /* Increased space around each anime item */
+    transition: transform 0.3s; /* Smooth transition for scaling */
+    color: black; /* Set the text color to black */
+    font-weight: bold; /* Make text bold */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+}
+
+.anime-item img {
+    width: 250px; /* Increased width for the images */
+    height: 320px; /* Increased height for the images */
+    object-fit: cover; /* Ensure the image covers the space without distortion */
+    transition: transform 0.3s; /* Smooth transition */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+}
+
+.anime-item img:hover {
+    transform: scale(1.1); /* Slightly enlarge the image on hover */
+}
+.anime-item:hover {
+    transform: scale(1.1); /* Enlarge on hover */
+}
+
+#libItems {
+    display: flex; /* Use flexbox to layout watchlist items */
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    gap: 15px; /* Space between items */
+}
+
+
+.feedback-form {
+    margin-top: 20px;
+    background-color: #ffffffdc; /* White background for the feedback form */
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.feedback-form input,
+.feedback-form textarea {
+    width: 90%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #00000000;
+    border-radius: 5px;
+}
+
+.feedback-form button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    color: white;
+    font-size: 16px;
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+.feedback-form button:hover {
+    background-color: #45a049; /* Lighter green on hover */
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+    padding-top: 60px;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 300px; /* Width of the modal */
+}
+
+.close-button {
+    background-color: #ff0000;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+.watchlist-button {
+    background-color: #4CAF50; /* Green background */
+    border: none; /* No border */
+    color: white; /* White text color */
+    padding: 10px 15px; /* Padding for the button */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 16px; /* Font size */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+.watchlist-button:hover {
+    background-color: #45a049; /* Lighter green on hover */
+}
+
+
+#watchlistItems {
+    display: flex; /* Use flexbox to layout watchlist items */
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    gap: 15px; /* Space between items */
+}
+
+
+
+.site-title {
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Center the image and text vertically */
+    justify-content: center; /* Center the title horizontally */
+    font-size: 36px; /* Set the font size to 36px */
+    margin: 20px 0; /* Add some margin above and below */
+    color: white; /* Set the text color to white */
+    
+    text-shadow: 
+    -2px -2px 0px black, /* Thicker outline */
+     2px -2px 0px black, /* Thicker outline */
+    -2px  2px 0px black, /* Thicker outline */
+     2px  2px 0px black; /* Thicker outline */
+}
+
+.favicon-img {
+    width: 100px; /* Decrease the size of the favicon image */
+    height: 100px; /* Decrease the size of the favicon image */
+    margin-right: 10px; /* Space between the image and title */
+}
